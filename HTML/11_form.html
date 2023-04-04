@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<form action="form.php">
+    First Name : <input type="text" name="first_name">
+    Last Name : <input type="text" name="last_name">
+    <input type="submit" value="Submit">
+
+    <textarea rows="4" cols="50">
+        Hello World!!
+        My name is theo interactive.
+    </textarea>
+
+</form>
+
+<form action="form.php">
+    <label for="male">Male</label>
+    <input id="male" type="radio" name="type" value="male">
+    <label for="female">Female</label>
+    <input id="female" type="radio" name="type" value="female">
+    <input type="submit" value="Submit">
+</form>
+
+
+<form>
+    <fieldset>
+       <legend>Form Name</legend>
+       Name : <input type="text" size="30">
+       Email : <input type="text" size="30">
+    </fieldset>
+
+
+    <select>
+        <option value="Bmw">Bmw</option>
+        <option value="Audi">Audi</option>
+        <option value="Benz">Benz</option>
+        <option value="Ford">Ford</option>
+     </select>
+
+     <select>
+        <optgroup label="Swedish Cars">
+           <option value="Volvo">Volvo</option>
+           <option value="Saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+           <option value="Benz">Benz</option>
+           <option value="Audi">Audi</option>
+        </optgroup>
+     </select>
+</form>
+
+
+<form action="form.php" method="get">
+    <input list="browsers" name="browsers">
+    <datalist id="browsers">
+       <option value="Internet Explorer">Internet Explorer</option>
+       <option value="Firefox">Firefox</option>
+       <option value="Chrome">Chrome</option>
+       <option value="Opera">Opera</option>
+       <option value="Safari">Safari</option>
+    </datalist>
+    <input type="submit" value="submit">
+</form>
+
+
+
+<button type="button">button</button>
+<button type="reset">reset</button>
+<button type="submit">submit</button>
+<form action="form.php" method="get">
+    Username : <input type="text" name="user_name">
+    Encryption : <keygen name="security">
+    <input type="submit" value="Submit">
+</form>
+
+<form action="form.php" method="get">
+    Username : <input type="text" name="user_name">
+    Encryption : <keygen name="security">
+    <input type="submit" value="Submit">
+ </form>
+
+</body>
+</html>
